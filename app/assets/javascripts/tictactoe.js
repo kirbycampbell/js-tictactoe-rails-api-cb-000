@@ -25,8 +25,7 @@ function updateState(spot) {
 }
 
 function setMessage(string) {
-  const messageDiv = window.document.getElementById('message');
-  messageDiv.innerHTML = string;
+  $('#message').text(string);
 }
 
 function checkWinner() {
