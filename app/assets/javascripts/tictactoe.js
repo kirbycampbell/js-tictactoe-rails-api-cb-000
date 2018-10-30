@@ -1,8 +1,8 @@
 // Code your JavaScript / jQuery solution here
 
 function player() {
-  doTurn();
-    if (turn % 2 === 1){
+
+    if (doTurn % 2 === 0){
         return "O";
     }
     else {
@@ -13,5 +13,5 @@ function player() {
 let turn;
 
 function doTurn() {
-  turn += 1;
+  return turn += 1;
 }
