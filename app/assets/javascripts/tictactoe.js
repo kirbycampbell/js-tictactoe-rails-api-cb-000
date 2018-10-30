@@ -47,6 +47,7 @@ function checkWinner() {
   return winner;
 }
 
+
 function saveGame() {
   var state = [];
   var gameData;
@@ -55,6 +56,7 @@ function saveGame() {
   });
 
   gameData = { state: state };
+
   if (currentGame) {
     $.ajax({
       type: 'PATCH',
@@ -69,6 +71,7 @@ function saveGame() {
     });
   }
 }
+
 
 function updateState(spot) {
   spot.innerHTML = player();
