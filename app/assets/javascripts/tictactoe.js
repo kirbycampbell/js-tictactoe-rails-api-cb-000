@@ -1,7 +1,7 @@
 // Code your JavaScript / jQuery solution here
 
 function player() {
-  //doTurn();
+  doTurn();
     if (turn % 2 === 0){
         return "X";
     }
@@ -11,7 +11,7 @@ function player() {
     //turn++
 }
 
-let turn = 1;
+let turn = 0;
 
 function doTurn() {
   turn++;
