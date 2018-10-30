@@ -93,6 +93,11 @@ function showPreviousGames() {
   });
 }
 
+function buttonizePreviousGame(game) {
+  $('#games').append(`<button id="gameid-${game.id}">${game.id}</button><br>`);
+  $(`#gameid-${game.id}`).on('click', () => reloadGame(game.id));
+}
+
 
 function updateState(spot) {
   spot.innerHTML = player();
