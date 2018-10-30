@@ -33,7 +33,7 @@ function checkWinner() {
     if (spot[0] === 'x') {
       console.log( spot[0]);
     } else {
-      console.log( 'not really');
+      console.log( spot[0]);
     }
   })
 }
