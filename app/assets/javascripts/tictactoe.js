@@ -12,10 +12,17 @@ $(document).ready(function() {
 
 var player = () => turn % 2 ? 'O' : 'X';
 
-
-
-function doTurn() {
+function doTurn(space) {
+  updateState(space);
   turn++;
+  if (checkWinner()) {
+  saveGame();
+  resetBoard();
+} else if (turn === 9) {
+  setMessage("Tie game.");
+  saveGame();
+  resetBoard();
+}
 }
 
 function updateState(spot) {
