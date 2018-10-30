@@ -2,7 +2,7 @@
 //These are the possible TTT winning combos
 const WINNING_COMBOS = [[0,1,2], [3,4,5], [6,7,8], [0,3,6],
                         [1,4,7], [2,5,8], [0,4,8], [2,4,6]];
-
+//Game start variables
 var turn = 0;
 var currentGame = 0;
 
@@ -28,17 +28,18 @@ function doTurn(space) {
   }
 }
 
+//Resets the board by emptying the spaces, and setting game start vars to 0
 function resetBoard() {
   $('td').empty();
   turn = 0;
   currentGame = 0;
 }
 
+//Checks for winner, and returns false until there is one.
 function checkWinner() {
   var board = {};
   var winner = false;
   $('td').text((index, square) => board[index] = square);
-
 
     WINNING_COMBOS.some(function(combo) {
       if (board[combo[0]] !== "" && board[combo[0]] === board[combo[1]] && board[combo[1]] === board[combo[2]]) {
@@ -46,7 +47,6 @@ function checkWinner() {
         return winner = true;
       }
     });
-
   return winner;
 }
 
