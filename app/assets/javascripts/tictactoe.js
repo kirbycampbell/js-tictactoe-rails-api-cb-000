@@ -1,14 +1,13 @@
 // Code your JavaScript / jQuery solution here
 
 function player() {
-
-    if (turn % 2 === 0){
+  doTurn();
+    if (turn % 2 === 1){
         return "X";
     }
     else {
         return "O";
     }
-
 }
 
 let turn = 0;
