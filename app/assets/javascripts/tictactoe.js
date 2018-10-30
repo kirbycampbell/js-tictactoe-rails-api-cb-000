@@ -25,3 +25,7 @@ function setMessage(string) {
   const messageDiv = window.document.getElementById('message');
   messageDiv.innerHTML = string;
 }
+
+function checkWinner() {
+
+}
