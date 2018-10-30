@@ -3,10 +3,10 @@
 function player() {
 
     if (doTurn % 2 === 0){
-        return "O";
+        return "X";
     }
     else {
-        return "X";
+        return "O";
     }
 }
 
