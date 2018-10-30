@@ -70,9 +70,7 @@ function saveGame() {
     $.post('/games', gameData, function(game) {
       currentGame = game.data.id;
       $('#games').append(`<button id="gameid-${game.data.id}">${game.data.id}</button><br>`);
-      $('#games').append(`<p="gameid-${game.id}">${game.updated_at}</p><br>`);
       $("#gameid-" + game.data.id).on('click', () => reloadGame(game.data.id));
-
     });
   }
 }
@@ -99,10 +97,8 @@ function showPreviousGames() {
 }
 
 function buttonizePreviousGame(game) {
-  $('#games').append(`<button id="gameid-${game.id}">${game.id}</button>`);
-  $('#games').append(`<p="gameid-${game.id}">${game.updated_at}</p><br>`);
+  $('#games').append(`<button id="gameid-${game.id}">${game.id}</button><br>`);
   $(`#gameid-${game.id}`).on('click', () => reloadGame(game.id));
-
 }
 
 
@@ -136,10 +132,12 @@ function reloadGame(gameID) {
   xhr.send(null);
 }
 
+//This updates the game board
 function updateState(spot) {
   spot.innerHTML = player();
 }
 
+//This sets the message to the User
 function setMessage(string) {
   $('#message').text(string);
 }
