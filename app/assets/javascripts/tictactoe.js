@@ -84,6 +84,15 @@ function attachListeners() {
   $('#clear').on('click', () => resetBoard());
 }
 
+function showPreviousGames() {
+  $('#games').empty();
+  $.get('/games', (savedGames) => {
+    if (savedGames.data.length) {
+      savedGames.data.forEach(buttonizePreviousGame);
+    }
+  });
+}
+
 
 function updateState(spot) {
   spot.innerHTML = player();
