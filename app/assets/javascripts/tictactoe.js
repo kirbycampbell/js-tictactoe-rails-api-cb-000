@@ -8,7 +8,7 @@ function player() {
     else {
         return "O";
     }
-    turn++
+    //turn++
 }
 
 let turn = 2;
