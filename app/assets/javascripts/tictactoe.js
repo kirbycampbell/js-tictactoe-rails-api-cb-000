@@ -16,13 +16,19 @@ function doTurn(space) {
   updateState(space);
   turn++;
   if (checkWinner()) {
-  saveGame();
-  resetBoard();
-} else if (turn === 9) {
-  setMessage("Tie game.");
-  saveGame();
-  resetBoard();
+    saveGame();
+    resetBoard();
+  } else if (turn === 9) {
+    setMessage("Tie game.");
+    saveGame();
+    resetBoard();
+  }
 }
+
+function resetBoard() {
+  $('td').empty();
+  turn = 0;
+  currentGame = 0;
 }
 
 function updateState(spot) {
