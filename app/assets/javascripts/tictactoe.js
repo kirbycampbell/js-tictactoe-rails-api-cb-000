@@ -31,6 +31,10 @@ function resetBoard() {
   currentGame = 0;
 }
 
+function checkWinner() {
+
+}
+
 function updateState(spot) {
   spot.innerHTML = player();
 }
