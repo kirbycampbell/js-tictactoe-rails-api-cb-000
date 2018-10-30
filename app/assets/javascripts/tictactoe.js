@@ -1,6 +1,7 @@
 // Code your JavaScript / jQuery solution here
 
 function player() {
+  doTurn();
     if (turn % 2 === 1){
         return "O";
     }
