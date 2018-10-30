@@ -2,10 +2,10 @@
 
 function player() {
     if (turn() % 2 ===0){
-        console.log("its even")
+        return "X";
     }
     else {
-        console.log("its odd")
+        return "O";
     }
 }
 
