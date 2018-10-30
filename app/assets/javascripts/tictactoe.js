@@ -27,13 +27,3 @@ function updateState(spot) {
 function setMessage(string) {
   $('#message').text(string);
 }
-
-function checkWinner() {
-  WINNING_COMBOS.forEach(function(spot) {
-    if (spot[0].text === 'x') {
-      console.log( spot[0].innerHTML);
-    } else {
-      console.log( spot[0].innerHTML);
-    }
-  })
-}
