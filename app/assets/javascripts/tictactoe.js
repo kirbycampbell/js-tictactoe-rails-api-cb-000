@@ -16,3 +16,7 @@ let turn = 0;
 function doTurn() {
   turn++;
 }
+
+function updateState(spot) {
+
+}
