@@ -2,13 +2,13 @@
 
 function player() {
   doTurn();
+  //Not sure why the test requires this in reverse for it to work
     if (turn % 2 === 1){
         return "X";
     }
     else {
         return "O";
     }
-    //turn++
 }
 
 let turn = 0;
