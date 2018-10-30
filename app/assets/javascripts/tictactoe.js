@@ -30,7 +30,7 @@ function setMessage(string) {
 
 function checkWinner() {
   WINNING_COMBOS.forEach(function(spot) {
-    if (spot === 'x') {
+    if (spot[0] === 'x') {
       console.log( "this kinda works");
     } else {
       console.log( 'not really');
