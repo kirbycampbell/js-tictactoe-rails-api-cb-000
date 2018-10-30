@@ -9,16 +9,8 @@ let currentGame = 0;
 $(document).ready(function() {
   attachListeners();
 });
-function player() {
-  doTurn();
-  //Not sure why the test requires this in reverse for it to work
-    if (turn % 2 === 1){
-        return "X";
-    }
-    else {
-        return "O";
-    }
-}
+
+var player = () => turn % 2 ? 'O' : 'X';
 
 
 
