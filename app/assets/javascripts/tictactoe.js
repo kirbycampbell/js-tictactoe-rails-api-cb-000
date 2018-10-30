@@ -70,7 +70,9 @@ function saveGame() {
     $.post('/games', gameData, function(game) {
       currentGame = game.data.id;
       $('#games').append(`<button id="gameid-${game.data.id}">${game.data.id}</button><br>`);
+      $('#games').append(`<p="gameid-${game.id}">${game.updated_at}</p><br>`);
       $("#gameid-" + game.data.id).on('click', () => reloadGame(game.data.id));
+
     });
   }
 }
