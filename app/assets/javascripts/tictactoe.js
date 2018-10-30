@@ -13,5 +13,5 @@ function player() {
 let turn;
 
 function doTurn() {
-  turn += 1;
+  turn++;
 }
