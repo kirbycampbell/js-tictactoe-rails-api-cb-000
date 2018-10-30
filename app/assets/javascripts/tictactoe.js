@@ -10,8 +10,10 @@ $(document).ready(function() {
   attachListeners();
 });
 
+//Sets player equal to 'X' if even or 'O' if odd
 var player = () => turn % 2 ? 'O' : 'X';
 
+//This makes the chosen move, and then checks for winner or tie game
 function doTurn(space) {
   updateState(space);
   turn++;
