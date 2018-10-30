@@ -11,7 +11,7 @@ function player() {
     //turn++
 }
 
-let turn = 2;
+let turn = 1;
 
 function doTurn() {
   turn++;
