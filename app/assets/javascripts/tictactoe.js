@@ -9,8 +9,8 @@ function player() {
     }
 }
 
-let num = 0;
+let turn = 0;
 
-function turn() {
-  return num++;
+function doTurn() {
+  return turn++;
 }
