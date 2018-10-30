@@ -10,7 +10,7 @@ function player() {
     }
 }
 
-let turn;
+let turn = 0;
 
 function doTurn() {
   turn++;
