@@ -1,7 +1,7 @@
 // Code your JavaScript / jQuery solution here
 
 function player() {
-    if (turn % 2 != 0){
+    if (turn % 2 === 1){
         return "O";
     }
     else {
