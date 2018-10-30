@@ -9,7 +9,7 @@ function player() {
     }
 }
 
-let turn = 0;
+let turn;
 
 function doTurn() {
   turn += 1;
