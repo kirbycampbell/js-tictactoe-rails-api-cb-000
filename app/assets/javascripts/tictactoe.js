@@ -20,3 +20,8 @@ function doTurn() {
 function updateState(spot) {
   spot.innerHTML = player();
 }
+
+function setMessage(string) {
+  const messageDiv = window.document.getElementById('message');
+  messageDiv.innerHTML = string;
+}
