@@ -8,7 +8,7 @@ function player() {
     else {
         return "O";
     }
-    doTurn();
+
 }
 
 let turn = 0;
