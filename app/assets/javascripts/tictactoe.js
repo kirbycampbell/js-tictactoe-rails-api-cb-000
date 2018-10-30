@@ -18,5 +18,5 @@ function doTurn() {
 }
 
 function updateState(spot) {
-
+  spot.innerHTML = player();
 }
