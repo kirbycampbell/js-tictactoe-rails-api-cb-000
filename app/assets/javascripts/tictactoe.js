@@ -2,7 +2,7 @@
 
 function player() {
   doTurn();
-    if (doTurn() % 2 === 0){
+    if (turn % 2 === 0){
         return "X";
     }
     else {
